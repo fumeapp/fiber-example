@@ -1,23 +1,23 @@
-# Gin+Fume example
-> Example setup of a Gin project running in Fume
+# Fiber+Fume example
+> Example setup of a Fiber project running in Fume
 
 <p align="center">
-  <img src="https://github.com/fumeapp/gin-example/blob/production/gin-example.png?raw=true" />
+  <img src="https://github.com/fumeapp/fiber-example/blob/production/fiber-example.png?raw=true" />
 </p>
 
 ```go
 package main
 
 import (
-	fume "github.com/fumeapp/gin"
-	"github.com/gin-gonic/gin"
+	fume "github.com/fumeapp/fiber"
+	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	routes := gin.New()
-	routes.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H{"message": "Gin running with Fume"}) 
+	app := fiber.New()
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.Status(200).JSON(&fiber.Map{"message": "Fiber running with Fume"})
 	})
-	fume.Start(routes, fume.Options{})
+	fume.Start(app, fume.Options{})
 }
 ```
