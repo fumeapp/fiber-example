@@ -4,10 +4,11 @@ go 1.19
 
 // replace github.com/fumeapp/fiber => /Users/k/fume/gin
 
-require github.com/fumeapp/fiber v0.1.5
+require github.com/fumeapp/fiber v0.1.4
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
+	github.com/awslabs/aws-lambda-go-api-proxy v0.13.3 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/klauspost/compress v1.16.5 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
@@ -26,7 +27,6 @@ require (
 
 require (
 	github.com/aws/aws-lambda-go v1.40.0 // indirect
-	github.com/awslabs/aws-lambda-go-api-proxy v0.14.0 // indirect
 	github.com/gofiber/fiber/v2 v2.44.0
 	golang.org/x/sys v0.7.0 // indirect
 )
