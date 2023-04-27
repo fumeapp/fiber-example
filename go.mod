@@ -4,7 +4,7 @@ go 1.19
 
 // replace github.com/fumeapp/fiber => /Users/k/fume/gin
 
-require github.com/fumeapp/fiber v0.1.15
+require github.com/fumeapp/fiber v0.1.16
 
 require (
 	github.com/acidjazz/aws-lambda-go-api-proxy v0.0.1 // indirect
